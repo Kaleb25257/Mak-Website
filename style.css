@@ -1,0 +1,636 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #04405c;
+    color:ghostwhite;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background:black;
+}
+
+nav {
+    display: flex;
+    gap: 40px;
+}
+
+nav a {
+    text-decoration: none;
+    color: ghostwhite;
+  /* Version 2 - Header */
+
+header {
+    background: #062b3a;
+    color: white;
+    padding: 18px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #25D366;
+}
+}
+
+.hero {
+    text-align: center;
+    padding: 120px 20px;
+}
+
+.hero h1 {
+    font-size: 50px;
+    margin-bottom: 20px; }
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+button {
+    padding: 14px 30px;
+    border: none;
+    border-radius: 8px;
+    background: red;
+    color: ghostwhite;
+    font-size: 16px;
+    cursor: pointer;
+}
+.services {
+    padding: 80px 8%;
+    text-align: center;
+    background: #04405c;
+}
+
+.services h2 {
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+.service-container {
+    display: flex;
+    justify-content: flex-start;
+    gap: 25px;
+}
+
+.service-card {
+    background: #022739;
+    padding: 90px;
+    border-radius: 12px;
+    width: 100%;
+  
+}
+
+.service-card h3 {
+    margin-bottom: 20px;
+
+}
+
+.service-card p {
+    line-height: 1.7;
+}
+.about {
+    padding: 80px 8%;
+    text-align: center;
+    background: #032535;
+}
+
+.about-content {
+    max-width: 700px;
+    margin: auto;
+}
+
+.about h2 {
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.about p {
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+.about button {
+    padding: 14px 30px;
+    border: none;
+    border-radius: 8px;
+    background:ghostwhite;
+    color:ghostwhite;
+    font-size: 16px;
+    cursor: pointer;
+}
+#contact {
+    padding: 80px 8%;
+    text-align: center;
+    background: #134c67;
+}
+
+#contact h2 {
+    font-size: 35px;
+    margin-bottom:15px;
+}
+
+#contact p {
+    margin-bottom: 30px;
+}
+
+#contact form {
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#contact input,
+#contact textarea {
+    padding: 15px;
+    border: 1px solid white;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+#contact textarea {
+    height: 150px;
+    resize: none;
+}
+
+#contact button {
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    background: red;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}  
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav {
+        gap: 15px;
+    }
+
+    .hero {
+        padding: 80px 20px;
+    }
+
+    .hero h1 {
+        font-size: 35px;
+    }
+
+    .service-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-card {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .about {
+        padding: 60px 20px;
+    }
+
+    .contact {
+        padding: 60px 20px;
+    }
+}
+footer {
+    background: black;
+    color: ghostwhite;
+    text-align: center;
+    padding: 25px;
+    font-size: 14px;
+}
+.whatsapp-button {
+    display: inline-block;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    padding: 15px 20px;
+    background: #25D366;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 16px;
+}
+.get-started {
+    background: red;
+    color: white;
+    padding: 5px 5px;
+    border-radius: 8px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+.service-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.service-card li {
+    margin: 15px 0;
+}
+
+.service-card li::before {
+    content: "✓ ";
+}
+
+.service-card p {
+    margin-top: 25px;
+    line-height: 1.7;
+
+}/* Version 2 - Hero */
+
+.services {
+    padding: 80px 20px;
+    text-align: center;
+    background: #06445c;
+    color: white;
+}
+
+.services h2 {
+    font-size: 38px;
+    margin-bottom: 40px;
+}
+
+.service-card {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 35px 25px;
+    background: white;
+    color: #222;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+.service-card h3 {
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+
+.service-card ul {
+    text-align: left;
+    padding-left: 25px;
+}
+
+.service-card li {
+    margin-bottom: 12px;
+    line-height: 1.6;
+}
+
+.service-card p {
+    margin-top: 25px;
+    line-height: 1.7;
+}
+  
+  .hero {
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #062b3a, #0b5269);
+    color: white;
+  }
+
+
+.hero h1 {
+    font-size: 52px;
+    line-height: 1.15;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    max-width: 650px;
+    margin: 0 auto 30px;
+    font-size: 20px;
+    line-height: 1.7;
+}
+
+.hero button {
+    display: block;
+    margin: 0 auto;
+    background: #25D366;
+    color: white;
+    padding: 15px 32px;
+    border-radius: 30px;
+    font-size: 17px;
+    border: none;
+}
+
+@media (max-width: 768px) {
+
+    .hero {
+        min-height: 75vh;
+        padding: 60px 20px;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .hero p {
+        font-size: 18px;
+        margin-bottom: 25px;
+    }
+
+}
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 700px;
+}
+
+.hero h1 {
+    margin-bottom: 20px;
+}
+
+.hero p {
+    margin-bottom: 30px;
+}
+
+.get-started {
+    display: inline-block;
+    background: red;
+    color: white;
+    text-decoration: none;
+    padding: 15px 32px;
+    border-radius: 30px;
+    font-size: 17px;
+}
+/* Version 2 - Services */
+
+.services {
+    padding: 80px 20px;
+    text-align: center;
+    background: #06445c;
+    color: white;
+}
+
+.services h2 {
+    font-size: 38px;
+    margin-bottom: 40px;
+}
+
+.service-card {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 35px 25px;
+    background: #ecf1f3;
+    color: #222;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+.service-card h3 {
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+
+.service-card ul {
+    text-align: left;
+    padding-left: 25px;
+}
+
+.service-card li {
+    margin-bottom: 12px;
+    line-height: 1.6;
+}
+
+.service-card p {
+    margin-top: 25px;
+    line-height: 1.7;
+}
+/* Version 2 - About */
+
+.about {
+    padding: 90px 20px;
+    background: #ecf1f3;
+    text-align: center;
+    color: #062b3a;
+}
+
+.about-content {
+    max-width: 700px;
+    margin: auto;
+}
+
+.about h2 {
+    font-size: 38px;
+    margin-bottom: 25px;
+}
+
+.about p {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.about button {
+    background: #062b3a;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 30px;
+    font-size: 17px;
+}
+/* Version 2 - Contact */
+
+.contact {
+    padding: 90px 20px;
+    background: #ecf1f3;
+    text-align: center;
+    color: white;
+}
+
+.contact h2 {
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+.contact p {
+    font-size: 18px;
+    margin-bottom: 35px;
+}
+
+.contact form {
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.contact input,
+.contact textarea {
+    width: 100%;
+    padding: 16px;
+    border: 1px solid #d5dce0;
+    border-radius: 12px;
+    font-size: 16px;
+    outline: none;
+}
+
+.contact textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+.contact button {
+    background: #d5dce0;
+    color: white;
+    padding: 16px;
+    border: none;
+    border-radius: 30px;
+    font-size: 17px;
+    cursor: pointer;
+}
+html {
+    scroll-behavior: smooth;
+}
+.whatsapp-button {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    padding: 15px 22px;
+    background: #25D366;
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    z-index: 1000;
+}
+/* Final Hero Polish */
+
+.hero h1 {
+    font-weight: 700;
+    letter-spacing: -1px;
+}
+
+.hero p {
+    opacity: 0.9;
+}
+
+.get-started {
+    transition: 0.3s ease;
+}
+
+.get-started:hover {
+    transform: translateY(-3px);
+}
+/* Services Card Polish */
+
+.service-card {
+    transition: 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+}
+
+.service-card li::marker {
+    color: #25D366;
+}
+/* Contact Form Visible Polish */
+
+.contact input,
+.contact textarea {
+    background: #f5f8fa;
+    border: 2px solid #e0e6e9;
+}
+
+.contact input:focus,
+.contact textarea:focus {
+    background:#d3dadd;
+    border-color: #25D366;
+    outline: none;
+}
+
+.contact button {
+    box-shadow: 0 6px 15px rgba(37, 211, 102, 0.25);
+}
+/* About Section Polish */
+
+.about-content {
+    padding: 35px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.about p {
+    color: #445;
+}
+
+.about button {
+    transition: 0.3s ease;
+}
+
+.about button:hover {
+    transform: translateY(-3px);
+}
+/* Footer Polish */
+
+footer {
+    background: #062b3a;
+    color: white;
+    text-align: center;
+    padding: 25px 20px;
+    font-size: 14px;
+}
+
+footer p {
+    margin: 0;
+    opacity: 0.9;
+}
